@@ -1,6 +1,8 @@
 import axios, { AxiosError } from 'axios';
 import { Task, TaskFormData } from '../types';
 
+// In production (Vercel), set REACT_APP_API_URL to your Railway backend URL.
+// In local dev, falls back to localhost:5000.
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 // Axios instance with base config
